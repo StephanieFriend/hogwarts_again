@@ -1,0 +1,8 @@
+<% @students.each do |student| %>
+  <section id="student-<%= student.id %>">
+    <%= student.name %>
+    <% student.professors.each do |professor| %>
+    <%= professor.length %>
+      <% end %>
+  </section>
+<% end %>
